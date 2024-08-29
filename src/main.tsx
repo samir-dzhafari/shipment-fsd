@@ -1,9 +1,10 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { Comp } from '@/shared/asd'
+
+const root = document.getElementById('root')
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <Comp />
+    <div>asd</div>
   </StrictMode>,
 )
