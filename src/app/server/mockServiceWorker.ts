@@ -4,7 +4,7 @@ const worker = setupWorker(
   // @widgets layer handlers
 )
 
-async function startMockServiceWorker() {
+export async function startMockServiceWorker() {
   await worker.start({
     onUnhandledRequest(request, print) {
       const url = new URL(request.url)
