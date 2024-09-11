@@ -10,9 +10,19 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tanstack/react-form": "^0.32.0",
     "@types/node": "^22.5.1",
+    "autoprefixer": "^10.4.20",
+    "mobx": "^6.13.1",
+    "mobx-react-lite": "^4.0.7",
+    "mobx-utils": "^6.0.8",
+    "normalize.css": "^8.0.1",
+    "postcss-import": "^16.1.0",
+    "postcss-nested": "^6.2.0",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.1",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.27.3",
@@ -29,9 +39,19 @@
     "eslint-plugin-react-refresh": "^0.4.9",
     "globals": "^15.9.0",
     "msw": "^2.3.5",
+    "postcss-custom-media": "^11.0.1",
+    "postcss-load-config": "^6.0.1",
+    "postcss-mixins": "^10.0.1",
+    "postcss-nesting": "^13.0.0",
+    "postcss-plugin": "^1.0.0",
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.0.1",
     "vite": "^5.4.1",
     "vite-tsconfig-paths": "^5.0.1"
-  }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
 }

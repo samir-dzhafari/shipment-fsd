@@ -1,0 +1,43 @@
+:root {
+  /* Текст*/
+
+  --text-primary-color: #181936; /* Основной цвет текста */
+  --text-secondary-color: #727D93; /* Вторичный цвет текста */
+  --text-link-color: #12e1c9; /* Цвет ссылки */
+
+  /* Фон */
+
+  --background-paper-color: #ffffff;
+  --background-glass-color: #ffffffcc;
+  --background-alternate-color: #00dc97;
+
+  /* Цвет элементов */
+
+  --primary-color: #04c671;
+  --primary-colorPressed: #16af6c;
+
+  --secondary-color: #DC004E;
+  --secondary-colorPressed: #860029;
+
+  /* Global colors */
+  --color-white: #ffffff;
+  --color-dark: #212a2e;
+  --color-gray: #a1a0a0;
+
+  --border-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  --shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+html[data-theme='light'] {
+  --text-primary-color: #13132F;
+  --text-link-color: #1CD885;
+  --background-paper-color: #ffffff;
+  --background-alternate-color: #BEE2D7;
+}
+
+html[data-theme='dark'] {
+  --text-primary-color: #c5c5ec;
+  --text-link-color: #828fff;
+  --background-paper-color: #212a2e;
+  --background-alternate-color: #1a2327;
+}

@@ -1,0 +1,40 @@
+@import url('../../breakpoints.css');
+
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 32px 24px 16px;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+
+  @media (--xs-viewport) {
+    flex-direction: column-reverse;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  flex-grow: 1;
+}
+
+.sidebar {
+  min-width: 300px;
+  display: flex;
+
+  @media (--sm-viewport) {
+    min-width: 100%;
+  }
+}
+
+.footer {
+  text-align: center;
+  padding-top: 40px;
+}

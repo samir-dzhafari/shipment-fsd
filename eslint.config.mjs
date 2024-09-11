@@ -41,6 +41,7 @@ export default antfu({
 					},
 				],
 			}],
+      'antfu/top-level-function': 'off',
 		},
 	},
 	// Feature-Sliced Design rules

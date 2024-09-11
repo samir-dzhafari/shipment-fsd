@@ -7,9 +7,15 @@ import path from 'node:path'
 export default defineConfig({
     plugins: [
         react(),
-        tsconfigPaths()
+        tsconfigPaths(),
     ],
     resolve: {
         alias: [{ find: '@', replacement: path.resolve(__dirname, 'src') }],
     },
+  css: {
+    modules: {
+      generateScopedName: '[name]__[local]__[hash:8]',
+      localsConvention: null,
+    },
+  },
 });

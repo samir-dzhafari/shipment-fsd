@@ -1,0 +1,73 @@
+@import url('../../../breakpoints.css');
+
+.root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+
+  height: 48px;
+  min-width: 240px;
+  padding: 4px 16px;
+
+  background: var(--primary-color);
+  color: var(--color-white);
+
+  border: 0;
+  border-radius: 24px;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 40px;
+
+  transform: scale(1);
+  transition: transform 0.2s ease-in-out;
+
+  &_size_small {
+    min-width: 100px;
+    padding: 4px 8px;;
+    height: 32px;
+    font-size: 12px;
+    line-height: 32px;
+  }
+
+  &_size_medium {
+    @media (--xs-viewport) {
+      flex-grow: 1;
+      min-width: 0;
+    }
+  }
+
+  &_size_large {
+    min-width: 400px;
+    font-size: 21px;
+    line-height: 48px;
+    @media (--xs-viewport) {
+      width: 100%;
+      min-width: 100%;
+    }
+  }
+
+  &_disabled {
+    cursor: default;
+    opacity: 0.7;
+  }
+
+  &:hover:not(.root_disabled) {
+    background: var(--primary-colorPressed);
+  }
+
+  &:active:not(.root_disabled) {
+    transform: scale(0.95);
+  }
+
+  &_theme_secondary {
+    background: var(--secondary-color);
+    color: var(--color-white);
+  }
+
+  &_theme_secondary:hover:not(.root_disabled) {
+    background: var(--secondary-colorPressed);
+  }
+}
