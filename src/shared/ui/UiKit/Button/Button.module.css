@@ -1,14 +1,18 @@
 @import url('../../../breakpoints.css');
 
 .root {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
+  vertical-align: center;
   cursor: pointer;
   overflow: hidden;
 
   height: 48px;
-  min-width: 240px;
+  min-width: 120px;
+  width: auto;
+  box-sizing: border-box;
+  text-transform: uppercase;
   padding: 4px 16px;
 
   background: var(--primary-color);

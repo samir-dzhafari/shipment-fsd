@@ -1,7 +1,82 @@
+/* MARK: - Root */
+
 .root {
   position: relative;
   height: 48px;
-  width: 240px;
+  width: auto;
+
+  &_gutter_bottom {
+    margin-bottom: 12px;
+  }
+}
+
+/* MARK: - Input */
+
+.input {
+  height: 100%;
+  width: 100%;
+  padding: 0 20px;
+
+  border-radius: 24px;
+  border: none;
+  outline: none;
+
+  background-color: var(--background-paper-color);
+
+  /* Hover */
+
+  &:hover {
+    box-shadow: var(--shadow);
+  }
+
+  &:not(:hover) {
+    border: 0.1px solid var(--color-faint-gray);
+  }
+
+  /* Focus */
+
+  &:focus {
+    outline: 1px solid var(--primary-color);
+    box-shadow: var(--shadow);
+
+    &::placeholder {
+      opacity: 1;
+    }
+  }
+
+  /* Placeholder */
+
+  &::placeholder {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  &:not(:focus) {
+    &::placeholder {
+      opacity: 0;
+    }
+  }
+
+  /* Align */
+
+  &_align {
+    &_left {
+      text-align: left;
+    }
+
+    &_center {
+      text-align: center;
+    }
+
+    &_right {
+      text-align: right;
+    }
+  }
+}
+
+/* MARK: - Label */
+
+.root {
 
   label {
     position: absolute;
@@ -16,34 +91,15 @@
     font-size: 16px;
     z-index: 1;
   }
+
 }
 
 .input {
-  height: 100%;
-  width: 100%;
-  padding: 0 16px;
 
-  border-radius: 24px;
-  border: none;
-  outline: none;
+  /* Focus */
 
-  background-color: var(--background-paper-color);
-
-  &:hover {
-    box-shadow: var(--shadow);
-  }
-
-  &:focus {
-    outline: 1px solid var(--primary-color);
-    box-shadow: var(--shadow);
-
-    &::placeholder {
-      opacity: 1;
-    }
-  }
-
-  &:not(:focus) {
-    box-shadow: var(--shadow);
+  &:focus + label {
+      color: var(--primary-color);
   }
 
   &:focus + label,
@@ -51,17 +107,12 @@
     top: 0px;
     left: 12px;
     font-size: 12px;
-    color: var(--primary-color);
   }
+}
 
-  &::placeholder {
-    opacity: 0;
-    transition: opacity 0.2s ease-in-out;
-  }
+/* MARK: - Error */
 
-  &:not(:focus) {
-    &::placeholder {
-      opacity: 0;
-    }
-  }
+.helperText {
+  /*color: var(--text-red-color);*/
+  margin: 2px 20px;
 }

@@ -11,7 +11,7 @@ type Props = {
 export const LayoutHeader: React.FC<Props> = (props) => {
   return (
     <header className={css.root}>
-      { props?.leftSlot ? props.leftSlot : <Logo />}
+      { props?.leftSlot ? props.leftSlot : <Logo style={{ marginRight: '8px' }} />}
       { props?.rightSlot }
     </header>
   )

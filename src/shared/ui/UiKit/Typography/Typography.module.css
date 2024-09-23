@@ -1,60 +1,84 @@
-.h1 {
-  font-size: 2rem;
-  font-weight: 700;
-  line-height: 2.3rem;
-  color: var(--text-primary-color)
+.variant {
+  &_h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.167;
+    letter-spacing: -0.01562em;
+    color: var(--text-primary-color)
+  }
+
+  &_h2 {
+    font-size: 3.75rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.00833em;;
+    color: var(--text-primary-color)
+  }
+
+  &_h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.167;
+    letter-spacing: 0;
+    color: var(--text-primary-color)
+  }
+
+  &_h4 {
+    font-size: 2.125rem;
+    font-weight: 700;
+    line-height: 1.235;
+    letter-spacing: 0.00735em;
+    color: var(--text-primary-color)
+  }
+
+  &_h5 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.334;
+    letter-spacing: 0;
+    color: var(--text-primary-color)
+  }
+
+  &_h6 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.6;
+    letter-spacing: 0.0075em;
+    color: var(--text-primary-color)
+  }
+
+  &_body {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: var(--text-primary-color)
+  }
+
+  &_caption {
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1rem;
+    color: var(--text-secondary-color)
+  }
 }
 
-.h2 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  line-height: 1.875rem;
-  color: var(--text-primary-color)
-}
+.align {
 
-.h3 {
-  font-size: 1.187rem;
-  font-weight: 700;
-  line-height: 1.75rem;
-  color: var(--text-primary-color)
-}
+  &_left {
+    text-align: left;
+  }
 
-.h4 {
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 1.5rem;
-  color: var(--text-primary-color)
-}
+  &_center {
+    text-align: center;
+  }
 
-.h5 {
-  font-size: 0.875rem;
-  font-weight: 700;
-  line-height: 1.25rem;
-  color: var(--text-primary-color)
-}
+  &_right {
+    text-align: right;
+  }
 
-.h6 {
-  font-size: 0.812rem;
-  font-weight: 700;
-  line-height: 1rem;
-  color: var(--text-primary-color)
-}
-
-.body {
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5rem;
-  color: var(--text-primary-color)
-}
-
-.caption {
-  font-size: 0.75rem;
-  font-weight: 400;
-  line-height: 1rem;
-  color: var(--text-secondary-color)
 }
 
 .gutterBottom {
-  margin-bottom: 16px;
+  margin-bottom: 0.35em;
 }
 

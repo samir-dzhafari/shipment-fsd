@@ -7,5 +7,6 @@ export const ToLoginButton = () => {
   const loginHandle = () => {
     navigate('/login')
   }
+
   return <Button variant="primary" size="small" onClick={loginHandle}>Войти</Button>
 }

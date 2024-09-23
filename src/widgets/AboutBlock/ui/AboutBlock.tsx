@@ -12,7 +12,7 @@ export const AboutBlock: React.FC<Props> = (props) => {
   return (
     <Paper component="section" className={css.root}>
       <div className={css.title}>
-        <Typography variant="h2" gutterBottom>{ props.aboutInfo.title }</Typography>
+        <Typography variant="h4" gutterBottom>{ props.aboutInfo.title }</Typography>
       </div>
       <div className={css.content}>
         { props.aboutInfo.texts.map((text, index) => (

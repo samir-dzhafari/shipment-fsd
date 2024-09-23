@@ -14,6 +14,7 @@ type Props = StyleProps & {
   variant?: Variant
   size?: Size
   disabled?: boolean
+  submit?: boolean
 }
 
 export const Button: React.FC<Props> = (props) => {
@@ -22,6 +23,7 @@ export const Button: React.FC<Props> = (props) => {
 
   return (
     <button
+      type={props?.submit ? 'submit' : 'button'}
       disabled={props.disabled}
       className={combineClassNames(
         css.root,
