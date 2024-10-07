@@ -1,7 +1,6 @@
 # React + TypeScript + Vite + FSD
 
 > Данный проект является учебный. 
-> Пожалуйста, не ищите в нем практическое применение :)
 
 ## Цель разработки
 
@@ -16,10 +15,9 @@
 2. Mobx
 3. Vite
 4. PostCSS 
-5. Mobx utils 
-6. TanStack Form (React Hook Form)
-7. Zod 
-8. Mock Server (MSW)
+5. React Hook Form
+6. Zod 
+7. Mock Server (MSW)
 
 ## Запуск
 
